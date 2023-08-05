@@ -16,7 +16,7 @@
  *
  *
  * @author <Lekhansh Rana>
- * @date <6/08/2023>
+ * @date <05/08/2023>
  *
  */
 #ifndef __STATS_H__
@@ -35,18 +35,20 @@ void print_array(unsigned char *ptr, unsigned char n);
  *  
  * @param *ptr  a pointer to an unsigned char data type
  * @param n size of the array
+ * 
+ * @result print the array 
  */
 
 
 
 
-/* Function used to sort the array in the ascending order */ 
+/* Function used to sort the array in the descending order */ 
 void sort_array(unsigned char *ptr, unsigned char n);
 /**
  * @brief 
  * We are using bubble sort algorithm for sorting the array.
  * Each element o the array compared with other and each elements.
- * Then if the value of first element is greater than second element
+ * Then if the value of first element is smaller than second element
  * then we swap the elements using another unsigned char temp. 
  * As we are taking the pointer, so the original value at the index 
  * changes and it forms the new array. 
@@ -55,12 +57,12 @@ void sort_array(unsigned char *ptr, unsigned char n);
  * @param *ptr  a pointer to an unsigned char data type
  * @param n size of the array
  * 
- * 
+ * @result print the array of the elements from largest to smallest
  */
 
 
 /* Function to find the minimum value in the array */ 
-unsigned char minimum(unsigned char *ptr, unsigned char n);
+unsigned char find_minimum(unsigned char *ptr, unsigned char n);
 /**
  * @brief 
  * Function is used to find the minimum value in the array.
@@ -76,7 +78,7 @@ unsigned char minimum(unsigned char *ptr, unsigned char n);
  */
 
 /* Function to find the maximum value in the array */ 
-unsigned char maximum(unsigned char *ptr, unsigned char n);
+unsigned char find_maximum(unsigned char *ptr, unsigned char n);
 /**
  * @brief 
  * Function is used to find the maximum value in the array.
@@ -92,7 +94,7 @@ unsigned char maximum(unsigned char *ptr, unsigned char n);
  */
 
 /* Function to find the mean of the array */ 
-unsigned char mean(unsigned char *ptr, unsigned char n);
+unsigned char find_mean(unsigned char *ptr, unsigned char n);
 /**
  * @brief 
  * Function is used to find the mean of the array.
@@ -109,7 +111,7 @@ unsigned char mean(unsigned char *ptr, unsigned char n);
  */
 
 /* Function to find the median of the array */ 
-unsigned char median(unsigned char *ptr, unsigned char n);
+unsigned char find_median(unsigned char *ptr, unsigned char n);
 /**
  * @brief 
  * Function is used to find the median of the array.
